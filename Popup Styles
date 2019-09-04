@@ -1,0 +1,77 @@
+/* For desktop view */
+
+.et_pb_section.et_pb_section_3.popup-section.et_section_regular:before {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+}
+
+.et_pb_section.et_pb_section_3.popup-section.et_section_regular {
+	display: none;
+}
+
+/* 
+* If error occurs 
+* add the styles to the "Row Settings: Advanced > Main Element" of Divi 
+*/
+  
+.et_pb_row.et_pb_row_3.popup-row {
+    transform: translatey(-50%) translatex(-50%);
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    z-index: 1000;
+    border: 5px solid rgb(28, 28, 28);
+    border-radius: 10px;
+	width: 837px;
+}
+
+.close .et_pb_blurb_content {
+    border-radius: 20px;
+    height: 34px;
+    background: #000;
+    padding-right: 0px;
+}
+
+/* Ipad Pro view */
+@media only screen and (max-width: 1024px) and (min-width: 981px)  {
+  .et_pb_row.et_pb_row_2.popup-row {
+	  top: 42% !important;
+	}
+}
+
+/* Ipad view */
+@media only screen and (max-width: 980px) and (min-width: 581px)  {
+  .et_pb_row.et_pb_row_2.popup-row {
+		width: 735px;
+	}
+}
+
+/* General Mobile */
+@media only screen and (max-width: 580px) and (min-width: 100px)  {
+  .et_pb_row.et_pb_row_2.popup-row {
+		padding-top: 21px !important;
+		padding-bottom: 21px !important;
+		padding-left: 20px!important;
+		padding-right: 20px!important;
+		top: 58% !important;
+	}
+  .popup-row h2 {
+		padding-bottom: 14px;
+		font-size: 23px !important;
+	}
+  .close .et_pb_blurb_content {
+		border-radius: 20px;
+		height: 35px;
+		padding-right: 3px;
+	}
+  .et_pb_module.et_pb_blurb.et_pb_blurb_3.close.et_pb_bg_layout_light.et_pb_text_align_left.et_pb_blurb_position_top {
+		top: -40px;
+		right: -38px;
+	}
+}
