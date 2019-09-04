@@ -17,9 +17,9 @@
 
 /* 
 * If error occurs 
-* add the styles to the "Row Settings: Advanced > Main Element" of Divi 
+* add the styles of ".et_pb_row.et_pb_row_3.popup-row" to the "Row Settings: Advanced > Main Element" 
 */
-  
+   
 .et_pb_row.et_pb_row_3.popup-row {
     transform: translatey(-50%) translatex(-50%);
     position: fixed;
@@ -28,7 +28,7 @@
     z-index: 1000;
     border: 5px solid rgb(28, 28, 28);
     border-radius: 10px;
-	width: 837px;
+    width: 837px;
 }
 
 .close .et_pb_blurb_content {
